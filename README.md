@@ -3,10 +3,10 @@
 This is my homework too complex to remain in
 main homework repository. It checks if ECC with
 given parameters exists by these bounds:
-- Singleton bound
-- Hamming bound
+- [Singleton bound](https://en.wikipedia.org/wiki/Singleton_bound)
+- [Hamming bound](https://en.wikipedia.org/wiki/Hamming_bound)
 - Gilbert bound
-- Gilbert-Varshamov bound
+- [Gilbert-Varshamov bound](https://en.wikipedia.org/wiki/Gilbert%E2%80%93Varshamov_bound)
 
 ## How to build?
 
