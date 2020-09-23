@@ -11,7 +11,7 @@ given parameters exists by these bounds:
 ## How to build?
 
 ```bash
-git clone --recursive https://github.com/foxpy/ecc-esists
+git clone --recursive https://github.com/foxpy/ecc-exists
 cd ecc-exists
 mkdir build
 cd build
