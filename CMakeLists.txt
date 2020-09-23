@@ -14,5 +14,9 @@ add_subdirectory(qc)
 
 add_executable(ecc-exists
     ecc-exists.c
+    singleton_bound.c
+    hamming_bound.c
+    gilbert_bound.c
+    util.c
 )
 target_link_libraries(ecc-exists PUBLIC qc)
