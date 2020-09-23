@@ -36,9 +36,11 @@ int main(int argc, char* argv[]) {
     if (qc_args_parse(args, argc, argv, &err) == -1) {
         fprintf(stderr, "Failed to parse command line arguments: %s\n", err);
         free(err);
+        free(args);
         exit(EXIT_FAILURE);
     }
     bool exists = ecc_exists(q, n, k, d, verbose);
     printf("Code with provided parameters %s!\n", exists ? "exists" : "does not exist");
+    qc_args_free(args);
     exit(exists ? EXIT_SUCCESS : EXIT_FAILURE);
 }
