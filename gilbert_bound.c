@@ -5,7 +5,6 @@
 
 bool gilbert_bound(size_t q, size_t n, size_t k, size_t d, bool verbose) {
     verbose_print(verbose, "Testing code with Gilbert bound...\n");
-
     // I am doubt this one works as intended, it feels too restrictive
     // I have checked calculations twice, everything is alright
     // Maybe I do not understand the Gilbert bound properly? Maybe.

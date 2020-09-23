@@ -15,8 +15,8 @@ bool ecc_exists(size_t q, size_t n, size_t k, size_t d, bool verbose) {
         verbose_print(verbose, "Ill-formed code: it does not fix or even detect any errors by design\n");
         return false;
     } else if (singleton_bound(q, n, k, d, verbose) &&
-        hamming_bound(q, n, k, d, verbose) &&
-        gilbert_bound(q, n, k, d, verbose)) {
+               hamming_bound(q, n, k, d, verbose) &&
+               gilbert_bound(q, n, k, d, verbose)) {
         return true;
     } else {
         return false;
@@ -24,10 +24,10 @@ bool ecc_exists(size_t q, size_t n, size_t k, size_t d, bool verbose) {
 }
 
 int main(int argc, char* argv[]) {
-	size_t q, n, k, d;
-	bool verbose = false;
-	qc_args* args = qc_args_new();
-	qc_args_unsigned(args, "q", &q, "Code bitness");
+    size_t q, n, k, d;
+    bool verbose = false;
+    qc_args* args = qc_args_new();
+    qc_args_unsigned(args, "q", &q, "Code bitness");
     qc_args_unsigned(args, "n", &n, "Code block length");
     qc_args_unsigned(args, "k", &k, "Information bits");
     qc_args_unsigned(args, "d", &d, "Hamming distance");
