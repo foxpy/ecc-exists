@@ -14,15 +14,11 @@ void verbose_print(bool verbose, const char* format, ...) {
 }
 
 static double factorial(size_t n) {
-    if (n < 20) {
-        double sum = 1;
-        for (size_t i = 1; i <= n; ++i) {
-            sum *= i;
-        }
-        return sum;
-    } else {
-        return pow(n, n);
+    double sum = 1;
+    for (size_t i = 1; i <= n; ++i) {
+        sum *= i;
     }
+    return sum;
 }
 
 static double C(size_t n, size_t k) {
