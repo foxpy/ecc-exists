@@ -17,7 +17,7 @@ enum estimation ecc_exists(size_t q, size_t n, size_t k, size_t d, bool verbose)
     }
 
     bound_function bound_functions[] = {
-        singleton_bound, hamming_bound, gilbert_bound,
+        singleton_bound, hamming_bound, gilbert_bound, gilbert_varshamov_bound,
     };
     for (size_t i = 0; i < sizeof(bound_functions)/sizeof(bound_functions[0]); ++i) {
         enum estimation ret = bound_functions[i](q, n, k, d, verbose);

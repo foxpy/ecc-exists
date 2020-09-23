@@ -11,6 +11,7 @@ enum estimation {
 enum estimation singleton_bound(size_t q, size_t n, size_t k, size_t d, bool verbose);
 enum estimation hamming_bound(size_t q, size_t n, size_t k, size_t d, bool verbose);
 enum estimation gilbert_bound(size_t q, size_t n, size_t k, size_t d, bool verbose);
+enum estimation gilbert_varshamov_bound(size_t q, size_t n, size_t k, size_t d, bool verbose);
 
 typedef enum estimation (*bound_function)(size_t, size_t, size_t, size_t, bool);
 

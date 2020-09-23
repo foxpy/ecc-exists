@@ -17,6 +17,7 @@ add_executable(ecc-exists
     singleton_bound.c
     hamming_bound.c
     gilbert_bound.c
+    gilbert_varshamov_bound.c
     util.c
 )
 target_link_libraries(ecc-exists PUBLIC qc)
