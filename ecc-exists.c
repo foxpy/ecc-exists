@@ -48,7 +48,7 @@ int main(int argc, char* argv[]) {
     if (qc_args_parse(args, argc, argv, &err) == -1) {
         fprintf(stderr, "Failed to parse command line arguments: %s\n", err);
         free(err);
-        free(args);
+        qc_args_free(args);
         exit(EXIT_FAILURE);
     }
 
